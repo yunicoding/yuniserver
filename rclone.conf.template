@@ -1,0 +1,22 @@
+# rclone 설정 파일 템플릿
+# 이 파일을 복사하여 ~/.config/rclone/rclone.conf로 사용하세요
+
+[googledrive]
+type = drive
+client_id = 
+client_secret = 
+scope = drive
+token = 
+team_drive = 
+
+# 사용 방법:
+# 1. rclone config 실행
+# 2. 'n' 입력 (새로운 원격 저장소)
+# 3. 이름: googledrive
+# 4. 타입: drive
+# 5. 나머지는 기본값으로 진행
+# 6. 웹 브라우저에서 Google 계정 인증
+
+# 테스트 명령어:
+# rclone ls googledrive:
+# rclone mkdir googledrive:yuniserver 
